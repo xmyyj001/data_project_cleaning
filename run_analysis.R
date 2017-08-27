@@ -58,4 +58,4 @@ groupData <- finalData %>%
         group_by(subject, activity) %>%
         summarise_all(funs(mean))
 
-write.csv(groupData, "./Meandata.csv", row.names = FALSE)
+write.table(groupData, "./Meandata.txt", row.names = FALSE)
